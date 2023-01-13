@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('droit_activites', function (Blueprint $table) {
             $table->id();
+            $table->string("id_acti");
+            $table->string("prix");
+            $table->string("detail");
             $table->timestamps();
         });
     }

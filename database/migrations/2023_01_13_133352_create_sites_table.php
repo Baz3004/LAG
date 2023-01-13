@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('sites', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("desc");
+            $table->string("id_activite");
+            $table->string("id_cond");
             $table->timestamps();
         });
     }

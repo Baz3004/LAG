@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('conditions', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("droit_entre");
+            $table->string("ouv_ferm");
+            $table->string("detail");
             $table->timestamps();
         });
     }
