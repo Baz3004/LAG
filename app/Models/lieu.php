@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class lieu extends Model
 {
     use HasFactory;
+
+    protected $fillable = ["nom"];
 }

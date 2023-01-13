@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("nom");
             $table->string("desc");
+            $table->string("id_lieu");
             $table->string("id_activite");
             $table->string("id_cond");
             $table->timestamps();
