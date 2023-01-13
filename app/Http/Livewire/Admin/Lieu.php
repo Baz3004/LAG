@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Admin;
 
-use App\Models\lieu;
+use App\Models\lieu as ModelsLieu;
 use Livewire\Component;
 
 
@@ -15,7 +15,7 @@ class Lieu extends Component
 
     public function render()
     {
-        $this->lieux=lieu::all();
+        $this->lieux=ModelsLieu::all();
         return view('livewire.admin.lieu');
     }
 
@@ -24,7 +24,7 @@ class Lieu extends Component
             'nom'=>'required',
         ]);
         
-        lieu::create($record);
+        ModelsLieu::create($record);
         $this->clear();
     }
 
@@ -41,7 +41,7 @@ class Lieu extends Component
         $record=$this->validate([
             'nom'=>'required',
         ]);
-        $result=lieu::find($this->selectId);
+        $result=ModelsLieu::find($this->selectId);
         $result->update($record);
 
         $this->clear();
@@ -51,7 +51,7 @@ class Lieu extends Component
         $record=$this->validate([
             'nom'=>'required'
         ]);
-        $result=lieu::find($this->selectId);
+        $result=ModelsLieu::find($this->selectId);
         $result->delete();
 
         $this->clear();

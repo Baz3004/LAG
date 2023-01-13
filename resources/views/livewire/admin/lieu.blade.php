@@ -7,6 +7,6 @@
 
 
     @foreach ($lieux as $lieu)
-        <p wire:click="selectedId({{$lieu}})">{{ $lieu->nom }}</p>
+        <p wire:click="select({{$lieu}})">{{ $lieu->nom }}</p>
     @endforeach 
 </div>
