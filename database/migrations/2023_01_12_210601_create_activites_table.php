@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('activites', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("desc");
+            $table->string("id_droit_acti");
             $table->timestamps();
         });
     }
