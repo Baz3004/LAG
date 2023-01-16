@@ -2,13 +2,6 @@ import { createWebHistory, createRouter } from "vue-router";
 
 // Les composants 
 import Home from '../pages/Home.vue';
-import Site from '../pages/Site.vue';
-import Activite from '../pages/Activite.vue';
-import Contact from '../pages/Contact.vue';
-import Apropos from '../pages/Apropos.vue';
-
-
-
 const routes =[
     {
         name :'Home',
@@ -18,22 +11,22 @@ const routes =[
     {
         name :'Site',
         path : '/site',
-        component : Site
+        component :() =>import (/* webpackChunkName: "site" */ '../pages/Site.vue')
     },
     {
         name :'Activite',
         path : '/activite',
-        component : Activite
+        component :() =>import (/* webpackChunkName: "activite" */ '../pages/Activite.vue')
     },
     {
         name :'Contact',
         path : '/contact',
-        component : Contact
+        component :() =>import (/* webpackChunkName: "contact" */ '../pages/Contact.vue')
     },
     {
         name :'Apropos',
         path : '/apropos',
-        component : Apropos
+        component :() =>import (/* webpackChunkName: "apropos" */ '../pages/Apropos.vue')
     },
 ]
 const router = createRouter({
