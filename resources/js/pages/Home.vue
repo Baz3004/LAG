@@ -10,12 +10,15 @@
                         KONGO-CENTRAL RDC
                     </h1>
                 </div>
+                <!-- barre de recherche -->
                 <div class="py-10  font-bold flex gap-2 text-gray-300">
-                    <input type="search" name="" id="" class="h-8 hidden text-black px-2 rounded-lg border-2 border-red-400 w-72 ">
-                    <p class="text-sm pt-1 ">
+                    <div v-show="voir">
+                        <input type="search" name="" id="" class="h-8 text-black px-2 rounded-lg border-2 border-red-400 w-64 animate__animated animate__bounceInRight">
+                    </div>
+                    <p class="text-sm pt-1 cursor-pointer animate__animated animate__bounceInLeft" v-show="!voir">
                         RECHERCHE
                     </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hover:text-red-500 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hover:text-red-500 " @click="voir=!voir">
                     <path stroke-linecap="round" stroke-linejoin="round"  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                     </svg>
                 </div>
@@ -47,8 +50,13 @@
     import ActSite from '../components/ActSite.vue';
     export default {
         name : 'Home',
+        data() {
+            return {
+                voir : false,
+            }
+        },
         components : {
             LieuxSite,siteTouristique,ActSite
-        } 
+        }
     }
 </script>

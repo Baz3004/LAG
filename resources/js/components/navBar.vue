@@ -2,7 +2,9 @@
     <div class="fixed w-full px-2 ">
         <div class="flex justify-between px-40">
             <div class=" pt-2 opacity-75">
-                <img src="images/logoa.png" alt="" srcset="" class="w-20 h-10  mt-2 ">
+                <router-link to="/">
+                    <img src="images/logoa.png" alt="" srcset="" class="w-20 h-10  mt-2 cursor-pointer">
+                </router-link>
             </div>
             <div class="flex gap-10 text-gray-50  py-5 ">
                 <router-link to="/" class="hover:text-red-400 hover:border-b-2 hover:border-b-red-500">Home</router-link>
