@@ -4,6 +4,5 @@
             <h2>Apropos</h2>
         </div>
 
-    </div>
-    
+    </div> 
 </template>

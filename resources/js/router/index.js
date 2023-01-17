@@ -28,6 +28,11 @@ const routes =[
         path : '/apropos',
         component :() => import(/*webpackChunkName : "apropos" */ '../pages/Apropos.vue')
     },
+    {
+        name : 'Recherche',
+        path : '/recherche',
+        component :() => import(/*webpackChunkName : "recherche" */ '../pages/Recherche.vue')
+    }
 ]
 const router = createRouter({
     history : createWebHistory(),
