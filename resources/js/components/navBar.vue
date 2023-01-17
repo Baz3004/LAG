@@ -12,6 +12,7 @@
                 <router-link to="/activite" class="hover:text-red-400 hover:border-b-2 hover:border-b-red-500">Activite</router-link>
                 <router-link to="/apropos" class="hover:text-red-400 hover:border-b-2 hover:border-b-red-500">Apropos</router-link>
                 <router-link to="/contact" class="hover:text-red-400 hover:border-b-2 hover:border-b-red-500">Contact</router-link>
+                <router-link to="/recherche" class="hover:text-red-400 hover:border-b-2 hover:border-b-red-500">Recherche</router-link>
             </div>
         </div>
     </div>

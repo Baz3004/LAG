@@ -34,7 +34,7 @@
        </div>
     </div>
     <div class="">
-        <div class="px-40 py-6 ">
+        <div class="px-40 py-20 ">
             <div class=" grid grid-cols-12">
                 <div class=" col-span-5 flex items-center">
                     <div style="background-image: url('images/mb4.JPG'); background-size: cover;">
@@ -53,16 +53,20 @@
                 </div>
             </div>
         </div>
-        <div class=" bg-gray-200 ">
+        <div class="bg-yellow-50 h-screen bg-cover s-1 " style="background-image: url('images/mb4.JPG'); background-repeat: no-repeat;   ">
             <div class="px-40">
                 <h1 class="text-2xl font-bold text-gray-600 px-4 py-6 font-serif text-center">
                     Quelques lieux où se trouvent nos Sites
                 </h1>
                 <LieuxSite/>
-                <h1 class="text-2xl font-bold text-gray-600  font-serif mx-80 pb-2 pt-5 text-center border-2 border-b-red-500 ">
+            </div>
+        </div>
+        <div class=" bg-gray-100 pb-16">
+            <div class="px-40">
+                <h1 class="text-2xl font-bold text-gray-600  font-serif mx-80 pb-2 pt-10 text-center border-b-2 border-b-red-500 ">
                    Nos sites touristiques
                 </h1>
-                <div class="grid grid-cols-12 gap-5 px-4 pt-5">
+                <div class="grid grid-cols-12 gap-5 px-4 pt-10">
                     <div class="col-span-3">
                         <siteTouristique/>
                     </div>
@@ -76,14 +80,39 @@
                         <siteTouristique/>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="bg-white pb-5">
+            <div class="px-40">
                 <div class="py-6">
-                    <h1 class="text-2xl font-bold text-gray-600 font-serif px-4 text-center ">
-                        Activités
+                    <h1 class="text-2xl font-bold text-gray-600  font-serif mx-96 pb-2 pt-5 text-center border-b-2 border-b-red-500 ">
+                        Activités 
                     </h1>
                 </div>
-                <ActSite/>
+                <div class="grid grid-cols-12 gap-5 px-4 py-10">
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-5 px-4 pb-10">
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                    <div class="col-span-4">
+                        <ActSite/>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
     </div>
 </template>
 <script>

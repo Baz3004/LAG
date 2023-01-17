@@ -1,7 +1,7 @@
-<template >
-    <div class="shadow">
+à<template >
+    <div class="shadow ">
         <img src="images/v4.JPG" alt="" srcset="" class="" >
-        <div class=" pt-3  bg-gray-50">
+        <div class=" pt-3  bg-white">
             <h1 class="text-gray-600 font-bold pb-2 px-3">
                 Chute de zongo
             </h1>

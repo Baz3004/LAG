@@ -32,3 +32,6 @@ Route::get('/', function () {
 Route::get('/test', function(){
     return view("pages.test");
 });
+Route::get('Recherche',function(){
+    return view("Recherche");
+});
